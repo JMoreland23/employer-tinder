@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 const Onboarding = () => {
-    const [cookies, setCookie, removeCookie] = useCookies('user')
+    const [cookies, setCookie, removeCookie] = useCookies(null)
     const [formData, setFormData] = useState({
         user_id: cookies.UserId,
         first_name: '',
